@@ -7,7 +7,7 @@ KHGui is now ready for production use! This is a complete GUI framework for Mine
 ## ✨ Features
 
 ### Core Functionality
-- ✅ **Screenshot-Based Rendering** - Pixel-perfect VS Code UI from texture atlas
+- ✅ **Custom Primitive-Based Rendering** - Professional VS Code UI via graphics primitives, layouts, and themed panels
 - ✅ **Multiloader Support** - Full parity between Fabric and NeoForge
 - ✅ **Code Editor** - Complete text editing with syntax highlighting
 - ✅ **Interactive UI** - Click handling, scrolling, keyboard shortcuts

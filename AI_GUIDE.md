@@ -139,14 +139,14 @@ public interface IConsoleProvider {
 
 ---
 
-## 🎨 Screenshot-Based Rendering
+## 🎨 Primitive-Based Rendering Engine
 
-### How it works:
+KHGui does not rely on static screenshot atlases. It constructs the entire IDE interface through modular rendering primitives and dynamic layout coordinates:
 
-1. **Take clean VS Code screenshot** (`reference.png`)
-2. **Slice into regions** (title bar, activity bar, etc.)
-3. **Generate atlas** (`vscode_ui.png` + `vscode_ui.json`)
-4. **Runtime:** Blit regions based on JSON coordinates
+1. **Primitive Layer**: Native graphics calls for background panels, status bars, borders, and tab headers.
+2. **Layout Layer**: Dynamic window geometry adapting to GUI scale and screen bounds.
+3. **Hit-Map Layer**: Coordinate mapping for clickable controls, resize splitters, and file trees.
+4. **Overlay Layer**: Font rendering, cursor blinking, selection highlights, and completion popups.
 
 ### Atlas JSON format:
 

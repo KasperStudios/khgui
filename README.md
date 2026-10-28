@@ -1,19 +1,20 @@
-# KHGui - Screenshot-Based GUI Framework for Minecraft
+# KHGui - Modern VS Code-Style GUI Framework for Minecraft
 
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green.svg)](https://minecraft.net)
 [![Java](https://img.shields.io/badge/Java-21-orange.svg)](https://openjdk.org)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**KHGui** is a modern GUI framework for Minecraft mods that replicates VS Code's interface using screenshot-based rendering. Built for the [KasHub](https://github.com/KasperStudios/Kashub) scripting mod.
+**KHGui** is a modern, modular GUI framework for Minecraft mods that replicates the professional VS Code interface using native rendering primitives, dynamic layouts, and layered hit-mapping. Originally built for the [KasHub](https://github.com/KasperStudios/kashub) scripting mod.
 
 ## ✨ Features
 
-- 🎨 **Screenshot-Based Rendering** - Pixel-perfect VS Code UI from texture atlas
-- 🔧 **Multiloader Support** - Works on both Fabric and NeoForge
-- ⌨️ **Full Text Editing** - Complete code editor with syntax highlighting
-- 🖱️ **Interactive UI** - Click handling, scrolling, and keyboard shortcuts
-- 🎯 **Extensible API** - Easy integration for other mods
-- 📦 **Library, Not App** - Provides framework, you provide data
+- 🎨 **Primitive-Based Rendering** - Custom rendering engine using native Minecraft graphics primitives, dynamic slices, and themed panels
+- 🔧 **Multiloader Architecture** - First-class support for both Fabric and NeoForge via Architectury
+- ⌨️ **Full Text Editing & Highlighting** - Complete in-game code editor with syntax highlighting, undo/redo, and selection
+- 💡 **IntelliSense & Tooltips** - Built-in code completion popups, parameter hints, and hover documentation
+- 🖱️ **Interactive Panel System** - Resizable activity bars, explorer sidebars, tab bars, and console drawers
+- 🎯 **Extensible Interface API** - Clean interfaces (`IEditorContext`, `IFileProvider`, `IConsoleProvider`, `IDialog`) for trivial mod embedding
+- 📦 **Zero-Bloat Library** - Embeddable via Jar-in-Jar (JiJ) or Gradle dependency
 
 ## 🚀 Quick Start
 
