@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "khgui",
+  "version": "${version}",
+  "name": "KHGui",
+  "description": "Advanced GUI framework for Minecraft mods, providing modern UI components and VS Code-inspired interfaces.",
+  "authors": [
+    "KasperStudios"
+  ],
+  "contact": {
+    "homepage": "https://github.com/KasperStudios/KHGui",
+    "sources": "https://github.com/KasperStudios/KHGui"
+  },
+  "license": "MIT",
+  "icon": "assets/khgui/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "kasperstudios.khgui.fabric.KHGuiFabric"
+    ],
+    "client": [
+      "kasperstudios.khgui.fabric.client.KHGuiFabricClient"
+    ]
+  },
+  "mixins": [
+    "khgui.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

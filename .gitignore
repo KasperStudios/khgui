@@ -1,0 +1,10 @@
+.gradle/
+build/
+.architectury-transformer/
+.idea/
+.vscode/
+bin/
+run/
+*.log
+*.class
+*.jar
